@@ -1,0 +1,16 @@
+import pygame
+from time import sleep
+pygame.init()
+window = pygame.display.set_mode((0,0),pygame.FULLSCREEN)
+pygame.mixer.init()
+pygame.mixer.music.load('Simple Background Music for Presentations & Tutorial Videos - youtube soft.mp3')
+pygame.mixer.music.play()
+sleep(15)
+pygame.mixer.music.load('Sudden Suspense Best Sound Effects.mp3')
+pygame.mixer.music.play()
+sleep(15)
+sleep(1)
+image = pygame.image.load('scarry image.gif')
+window.blit(image,(0,0))
+pygame.display.update()
+sleep(3)
